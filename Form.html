@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <Title> Form </Title>
+        <style>
+           body {
+                background: linear-gradient(318deg, #F5F0FF 3.02%, #DBC7FF 96.98%);
+                padding: 0 80px; background-size: cover;
+            }
+
+            header {
+                height: 80px; width: 75%; background-color: rgba(255, 255, 255, 0.25); border-radius: 20px;
+                box-shadow: 0px 4px 14px 0px rgba(41, 0, 113, 0.50) inset, 0px 4px 12px 0px rgba(41, 0, 113, 0.50);
+                font-weight: 600;
+                display: flex; align-items: center; position: absolute; top: 24px;
+            }
+
+            form {
+                position: absolute; top: 180px;
+                color: #121212;
+            }
+
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: #5D00FF;
+                text-align: center;
+                padding: 1.2vw;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            li a:hover {
+                color:#8548ef;
+                text-shadow: 1px 1px 2px rgba(37, 18, 69, 0.20);
+                font-weight: bold;
+            }
+
+            h4 {
+                color: #5D00FF;
+            }
+        </style>
+    </Head>
+
+    <Body>
+        <header>
+            <ul>
+                <li><a href="index.html"><img src="logo.svg" width="32px"></a></li>
+                <li><a href="Intro.html">Introduce</a></li>
+                <li><a href="Image map.html">Image Map</a></li>
+                <li><a href="Iframe.html">Iframe</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="Grid.html">Grid</a></li>
+            </ul>
+        </header>
+
+
+        <Form method="post">
+            <fieldset style="background-color: rgba(255, 255, 255, 0.5); border-radius: 16px; border: #bbafff; padding: 10px 20px; height: 300px;
+            box-shadow: 2px 2px 8px 0px rgba(179, 145, 236, 0.5) inset, 2px 2px 8px 0px rgba(138, 106, 192, 0.5);">
+                <legend style="font-size: 22px; font-weight: 700; color: #5D00FF;">개인정보</legend><br>
+                <label for="birth" style="color: #5D00FF; font-weight: bold;"> 출생 연·월:</label>
+                <input style="padding: 8px; border: 2px solid #5D00FF; margin-left: 20px; border-radius: 8px;" type="month" id="birth" name="birth" min="1960-01" max="2008-12"><br><br>
+                <label for="snumber" style="color: #5D00FF; font-weight: bold;">학번 8자리:</label>
+                <input type="number" id="snumber" style="padding: 8px; border: 2px solid #5D00FF; margin-left: 20px; border-radius: 8px;" name="snumber" value=""><br><br>
+                <label for="RC" style="color: #5D00FF; font-weight: bold;">소속된 RC:</label>
+                <input type="radio" id="RC1" name="RC1" value="토레이">토레이
+                <input type="radio" id="RC2" name="RC2" value="장기려">장기려
+                <input type="radio" id="RC3" name="RC3" value="카이퍼">카이퍼
+                <input type="radio" id="RC4" name="RC4" value="손양원">손양원
+                <input type="radio" id="RC5" name="RC5" value="열송학사">열송학사
+                <input type="radio" id="RC6" name="RC6" value="카마이클">카마이클<br><br><br>
+                <input type="button" id="저장" name="저장" value="저장" style="font-size: 12px; border-radius: 8px; border: 2px solid #5D00FF; padding: 8px 20px; margin-bottom: 20px; justify-items: center; color: #5D00FF; background-color: #f7f3ff; position: relative; left: 40%;">
+            </fieldset><br><br>
+
+            <h4>Q1. 거주 유형을 선택하여 주세요. </h4>
+            <input type="radio" id="type1" name="type1" value="기숙사">기숙사<br>
+            <input type="radio" id="type2" name="type2" value="자취">자취<br>
+            <input type="radio" id="type3" name="type3" value="통학">통학<br><br><br>
+            
+            <h4>Q2. 거주해본 적 있는 곳을 모두 선택해주세요. </h4>
+            <input type="checkbox" id="rctype1" name="rctype1" value="">비전관<br>
+            <input type="checkbox" id="rctype2" name="rctype2" value="">은혜관<br>
+            <input type="checkbox" id="rctype3" name="rctype3" value="">하용조관<br>
+            <input type="checkbox" id="rctype4" name="rctype4" value="">벧엘관<br>
+            <input type="checkbox" id="rctype5" name="rctype5" value="">로뎀관<br>
+            <input type="checkbox" id="rctype6" name="rctype6" value="">국제관<br>
+            <input type="checkbox" id="rctype7" name="rctype7" value="">갈대상자관<br>
+            <input type="checkbox" id="rctype8" name="rctype8" value="">외부거주<br><br><br>
+
+            <h4>Q3. 평소 학교에서 휴식을 취할 때 어느 장소에서 쉬나요? </h4>
+            <select id="rest" name="rest">
+                <option value="기숙사">기숙사</option>
+                <option value="도서관">도서관</option>
+                <option value="코딩스페이스">코딩스페이스</option>
+                <option value="소프트웨어라운지">소프트웨어라운지</option>
+                <option value="학관">학관</option>
+                <option value="동아리방">동아리방</option>
+                <option value="학회실">학회실</option>
+                <option value="기타">기타</option>
+                <option value="X">학교에서 휴식을 취하지 않는다</option>
+            </select><br><br><br>
+
+            <h4>Q4. 평소 학교에서 식사를 할 때 어디서 식사를 하나요? </h4>
+            <select id="meal" name="meal">
+                <option value="학교 안 식당">학교 안 식당</option>
+                <option value="기숙사">기숙사</option>
+                <option value="편의점 혹은 매점">편의점 혹은 매점</option>
+                <option value="기타">기타</option>
+                <option value="X">학교에서 밥을 먹지 않는다</option>
+            </select><br><br><br>
+
+            <h4>Q5. 학교 내에서 휴식을 취하거나 식사를 할 때 불편한 점을 작성하세요. </h4>
+            <textarea id="cons" name="cons" style="font-size: 12px; border-radius: 8px; border: 2px solid #5D00FF; padding: 8px 20px; margin-bottom: 20px; text-align: left; background-color: #f7f3ff;"></textarea><br><br><br><br><br>
+
+            <input type="reset" value="reset" style="font-size: 12px; border-radius: 8px; border: 2px solid #5D00FF; padding: 8px 20px; margin-bottom: 20px; justify-items: center; color: #5D00FF; background-color: #f7f3ff;">
+            <input type="submit" value="submit" style="font-size: 12px; border-radius: 8px; border: 2px solid #5D00FF; padding: 8px 20px; margin-bottom: 20px; justify-items: center; color: #5D00FF; background-color: #f7f3ff;">
+        </Form><br><br><br>
+
+    </Body>
+</html>

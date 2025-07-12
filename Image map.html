@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <Title> Image map </Title>
+        <style>
+            body {
+                background: linear-gradient(318deg, #F5F0FF 3.02%, #DBC7FF 96.98%);
+                padding: 0 80px; background-size: cover;
+            }
+
+            header {
+                height: 80px; width: 75%; background-color: rgba(255, 255, 255, 0.25); border-radius: 20px;
+                box-shadow: 0px 4px 14px 0px rgba(41, 0, 113, 0.50) inset, 0px 4px 12px 0px rgba(41, 0, 113, 0.50);
+                font-weight: 600;
+                display: flex; align-items: center; position: absolute; top: 24px;
+            }
+
+
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: #5D00FF;
+                text-align: center;
+                padding: 1.2vw;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            li a:hover {
+                color:#8548ef;
+                text-shadow: 1px 1px 2px rgba(37, 18, 69, 0.20);
+                font-weight: bold;
+            }
+
+            .map-container {
+                position: relative;
+                margin-top: 160px;
+                display: inline-block;
+            }
+            .map-container img {
+                display: block;
+                border: 12px solid #f9f9f9;
+                box-shadow: 4px 4px 12px rgba(41,0,113,0.8);
+            }
+            .map-container.shape {
+                position: absolute;
+                border: 3px dashed red;
+                pointer-events: none;
+            }
+        </style>
+    </Head>
+
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html"><img src="logo.svg" width="32px"></a></li>
+                <li><a href="Intro.html">Introduce</a></li>
+                <li><a href="Image map.html">Image Map</a></li>
+                <li><a href="Iframe.html">Iframe</a></li>
+                <li><a href="Form.html">Form</a></li>
+            </ul>
+        </header>
+
+        <div>
+            <map name="pohangmap">
+                <area shape="circle" coords="360, 84, 20" href="https://www.handong.edu/kor/" target="_blank">
+                <area shape="circle" coords="146, 430, 20" href="https://www.postech.ac.kr/kor/index.do" target="_blank">
+                <area shape="rect" coords="650,650, 740,673" href="https://www.google.com/maps/?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <area shape="poly" coords="188,458, 170,484, 206,484" href="#효자동">
+                <area shape="poly" coords="380,120, 320,200, 450,200" href="#장량동">
+            </map>
+        </div>
+
+        <div class="map-container">
+            <img src="map.jpg" width="1280" alt="포항 지도" usemap="#pohangmap">
+            <div class="shape" style="left: 360; top: 84px; width: 40px; height: 40px; border-radius: 50%;"></div>
+            <div class="shape" style="left: 146; top: 430px; width: 40px; height: 40px; border-radius: 50%;"></div>
+            <div class="shape" style="left: 650px; top: 650px; width: 90px; height: 23px;"></div>
+            <div class="shape" style="left: 320px; top: 120px; width: 130px; height: 80px;"></div>
+        </div>
+
+
+        <section style="position: absolute; top: 1400px;">
+            <h2 id="장량동" style="color: #5D00FF;"> 장량동 카페&맛집 List </h2>
+            <ul style="color: #121212;">
+                <li style="font-size: 18px; font-weight: bold;">브런치카페</li>
+                <ul>
+                    <li style="padding-right: 20px;">인브리즈</li>
+                    <li style="padding-right: 20px;">논스탠다드 양덕점</li>
+                    <li style="padding-right: 20px;">눅카페</li>
+                    <li style="padding-right: 20px;">오픈오프</li>
+                    <li style="padding-right: 20px;">카페 브리즈나인</li>
+                    <li style="padding-right: 20px;">부에노유즈</li>
+                    <li style="padding-right: 20px;">카페이지스</li>
+                </ul><br><br>
+                <li style="font-size: 18px; font-weight: bold; padding-right: 50px;">맛집</li>
+                <ul>
+                    <li style="padding-right: 20px;">신세계닭발</li>
+                    <li style="padding-right: 20px;">큰손칼국수</li>
+                    <li style="padding-right: 20px;">샤브20 본점</li>
+                    <li style="padding-right: 20px;">전주콩나루콩나물국밥</li>
+                    <li style="padding-right: 20px;">화목정</li>
+                    <li style="padding-right: 20px;">목구멍 포항점</li>
+                    <li style="margin-bottom: 800px;">PIZ</li>
+                </ul>
+            </ul>
+
+            <h2 id="효자동" style="color: #5D00FF;"> 남구 카페&맛집 List </h2> 
+            <ul style="color: #121212">
+                <li style="font-size: 18px; font-weight: bold;">예쁜 카페</li>
+                <ul>
+                    <li style="padding-right: 20px;">카페담 철길점</li>
+                    <li style="padding-right: 20px;">대잠맨션</li>
+                    <li style="padding-right: 20px;">더포치</li>
+                    <li style="padding-right: 20px;">카페연일</li>
+                    <li style="padding-right: 20px;">바르벳</li>
+                </ul><br><br>
+                <li style="font-size: 18px; font-weight: bold; padding-right: 40px;">맛집</li>
+                <ul>
+                    <li style="padding-right: 20px;">낭만이태리</li>
+                    <li style="padding-right: 20px;">가족정</li>
+                    <li style="padding-right: 20px;">스틸룸코티지</li>
+                    <li style="padding-right: 20px;">비룡</li>
+                    <li style="padding-right: 20px;">해미해물찜 본점</li>
+                    <li style="margin-bottom: 300px;">효자곱 본점</il>
+                </ul>
+            </ul>
+        </Section>
+    </body>
+</html>
